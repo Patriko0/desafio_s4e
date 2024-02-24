@@ -13,5 +13,14 @@ namespace Desafio_S4E.Views.User
 
     public partial class Index
     {
+
+        /// <summary>
+        /// Controle BTN_Create.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BTN_Create;
     }
 }
