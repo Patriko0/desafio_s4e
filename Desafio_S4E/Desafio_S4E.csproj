@@ -218,10 +218,13 @@
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
     <Compile Include="DAO\Conexao.cs" />
-    <Compile Include="DAO\UsuerDAO.cs" />
+    <Compile Include="DAO\EtapaDAO.cs" />
+    <Compile Include="DAO\TarefaDAO.cs" />
+    <Compile Include="DAO\UserDAO.cs" />
     <Compile Include="Models\EtapaModel.cs" />
     <Compile Include="Models\TarefaModel.cs" />
     <Compile Include="Models\UserModel.cs" />
+    <Compile Include="Services\ServiceUser.cs" />
     <Compile Include="Views\Home\Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
