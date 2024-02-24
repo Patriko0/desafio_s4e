@@ -10,12 +10,12 @@ namespace Desafio_S4E.Services
 {
     public class ServiceEtapa
     {
-        public bool Store(EtapaModel etapa)
+        public bool Store(EtapaModel etapa, int id)
         {
             try
             {
                 EtapaDAO etapaDAO = new EtapaDAO();
-                etapaDAO.Create(etapa);
+                etapaDAO.Create(etapa, id);
                 return true;
             }
             catch (Exception ex)

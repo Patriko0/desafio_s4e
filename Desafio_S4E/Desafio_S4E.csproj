@@ -134,6 +134,8 @@
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="Views\Etapa\Create.aspx" />
+    <Content Include="Views\Etapa\Index.aspx" />
     <Content Include="Views\Home\Index.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
@@ -229,6 +231,20 @@
     <Compile Include="Services\ServiceEtapa.cs" />
     <Compile Include="Services\ServiceTarefa.cs" />
     <Compile Include="Services\ServiceUser.cs" />
+    <Compile Include="Views\Etapa\Create.aspx.cs">
+      <DependentUpon>Create.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Etapa\Create.aspx.designer.cs">
+      <DependentUpon>Create.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Etapa\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Etapa\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Views\Home\Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

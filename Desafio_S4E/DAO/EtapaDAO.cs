@@ -9,11 +9,11 @@ namespace Desafio_S4E.DAO
 {
     public class EtapaDAO
     {
-        public void Create(EtapaModel etapa)
+        public void Create(EtapaModel etapa, int id)
         {
             try
             {
-                string sql = $"INSERT INTO Etapa (descricao, dataInicio, dataConclusao) VALUES ('{etapa.Desc},{etapa.DataInicio},{etapa.DataConclusao}')";
+                string sql = $"INSERT INTO Etapa (descricao, dataInicio, dataConclusao, idTarefa) VALUES ('{etapa.Desc}','{etapa.DataInicio}','{etapa.DataConclusao}', {id})";
                 Conexao conn = new Conexao();
                 conn.ExecuteReader(sql);
             }

@@ -17,6 +17,8 @@ namespace Desafio_S4E
             routes.MapPageRoute("HomePageIndexRoute", "", "~/Views/Home/Index.aspx");
             //routes.MapPageRoute("TarefaUserIndexRoute", "Tarefas/{Id}", "~/Views/Tarefa/Index.aspx");
             routes.MapPageRoute("TarefaUserCreateRoute", "Tarefas/create", "~/Views/Tarefa/Create.aspx");
+            routes.MapPageRoute("EtapasCreateRoute", "Etapas/create", "~/Views/Etapa/Create.aspx");
+
             routes.MapPageRoute("UserIndexRoute", "User/", "~/Views/User/Index.aspx");
             routes.MapPageRoute("UserCreateRoute", "User/create", "~/Views/User/Create.aspx");
 

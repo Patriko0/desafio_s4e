@@ -9,7 +9,7 @@
         <div class="col-2 flex-column align-items-center justify-content-center align-content-center">
 
         <asp:DropDownList ID="DropDownList" runat="server" DataSourceID="SqlDataSourceUsuarios" DataTextField="nome" DataValueField="id"></asp:DropDownList>
-        <asp:SqlDataSource ID="SqlDataSourceUsuarios" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" SelectCommand="SELECT [id], [nome] FROM [Usuario]"></asp:SqlDataSource>
+        <asp:SqlDataSource ID="SqlDataSourceUsuarios" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>"></asp:SqlDataSource>
         </div>
         <div class="col-3 flex-column">
         <asp:Button ID="BTN_AddTarefa" runat="server" CssClass="btn btn-info" Text="Adicionar Tarefa" OnClick="BTN_AddTarefa_Click" />

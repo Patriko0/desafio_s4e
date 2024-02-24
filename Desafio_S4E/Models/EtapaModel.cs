@@ -10,6 +10,6 @@ namespace Desafio_S4E.Models
         public int Id { get; set; }
         public string Desc { get; set; }
         public DateTime DataInicio { get; set; }
-        public DateTime DataConclusao { get; set; }
+        public DateTime? DataConclusao { get; set; }
     }
 }
