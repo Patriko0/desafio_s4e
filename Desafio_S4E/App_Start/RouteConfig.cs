@@ -13,6 +13,12 @@ namespace Desafio_S4E
             var settings = new FriendlyUrlSettings();
             settings.AutoRedirectMode = RedirectMode.Permanent;
             routes.EnableFriendlyUrls(settings);
+
+            routes.MapPageRoute("HomePageIndexRoute", "", "~/Views/Home/Index.aspx");
+            routes.MapPageRoute("TarefaIndexRoute", "Tarefas/", "~/Views/Tarefa/Index.aspx");
+            routes.MapPageRoute("TarefaUserIndexRoute", "Tarefas/{id}", "~/Views/Tarefa/TarefaUser.aspx");
+            routes.MapPageRoute("UserIndexRoute", "User/", "~/Views/User/Index.aspx");
+
         }
     }
 }
