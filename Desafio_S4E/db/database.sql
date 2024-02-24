@@ -17,7 +17,7 @@ id int primary key identity(1,1) not null,
 descricao nvarchar(255) not null,
 dataInicio date not null,
 dataConclusao date ,
-idTarefa int not null foreign key references Tarefa(id) 
+idTarefa int not null foreign key references Tarefa(id) on delete cascade
 )
 GO
 
@@ -29,6 +29,6 @@ nome nvarchar(255) not null
 GO
 
 create table TarefaUsuario(
-idUsuario int not null foreign key references Usuario(id),
-idTarefa int not null foreign key references Tarefa(id)
+idUsuario int not null foreign key references Usuario(id) on delete cascade,
+idTarefa int not null foreign key references Tarefa(id) on delete cascade
 )
