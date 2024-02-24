@@ -10,12 +10,12 @@ namespace Desafio_S4E.Services
 {
     public class ServiceTarefa
     {
-        public bool Store(TarefaModel tarefa)
+        public bool Store(TarefaModel tarefa, int id)
         {
             try
             {
                 TarefaDAO tarefaDAO = new TarefaDAO();
-                tarefaDAO.Create(tarefa);
+                tarefaDAO.Create(tarefa, id);
                 return true;
             }
             catch (Exception ex)

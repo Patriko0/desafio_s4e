@@ -37,7 +37,7 @@ namespace Desafio_S4E.Views.User
 
         protected void BTN_AddTarefa_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect($"/Tarefas/create?Id={DropDownList.SelectedValue}");
         }
 
         protected void BTN_Delete_Click(object sender, EventArgs e)

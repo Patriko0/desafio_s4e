@@ -9,12 +9,20 @@ namespace Desafio_S4E.DAO
 {
     public class TarefaDAO
     {
-        public void Create(TarefaModel tarefa)
+        public void Create(TarefaModel tarefa, int idUser)
         {
             try
             {
-                string sql = $"INSERT INTO Tarefa (descricao, dataInicio) VALUES ('{tarefa.Desc},{tarefa.DataInicio}')";
+                string sql = $"INSERT INTO Tarefa (descricao, dataInicio) VALUES ('{tarefa.Desc}','{tarefa.DataInicio.ToShortDateString()}')";
                 Conexao conn = new Conexao();
+                conn.ExecuteReader(sql);
+
+                sql = "SELECT TOP 1 * FROM Tarefa ORDER BY id DESC";
+
+                DataView dv = conn.Execute(sql);
+                int tarefaId = (int)dv[0]["id"];
+
+                sql = $"Insert into TarefaUsuario (idUsuario, idTarefa) Values ({idUser}, {tarefaId})";
                 conn.ExecuteReader(sql);
             }
             catch (Exception ex)
