@@ -1,4 +1,5 @@
-﻿using Desafio_S4E.Models;
+﻿using Desafio_S4E.DAO;
+using Desafio_S4E.Models;
 using Desafio_S4E.Services;
 using System;
 using System.Collections.Generic;
@@ -31,7 +32,7 @@ namespace Desafio_S4E.Views.User
 
         protected void BTN_Create_Click(object sender, EventArgs e)
         {
-            Response.Redirect("User/create");
+            Response.Redirect("/User/create");
         }
 
         protected void BTN_AddTarefa_Click(object sender, EventArgs e)
@@ -42,6 +43,10 @@ namespace Desafio_S4E.Views.User
         protected void BTN_Delete_Click(object sender, EventArgs e)
         {
 
+            UserDAO userDAO = new UserDAO();
+            userDAO.Delete(int.Parse( DropDownList.SelectedValue));
+            Response.Redirect("/User");
+           
         }
     }
 }
