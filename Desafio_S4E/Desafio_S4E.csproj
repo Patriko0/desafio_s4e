@@ -225,6 +225,8 @@
     <Compile Include="Models\EtapaModel.cs" />
     <Compile Include="Models\TarefaModel.cs" />
     <Compile Include="Models\UserModel.cs" />
+    <Compile Include="Services\ServiceEtapa.cs" />
+    <Compile Include="Services\ServiceTarefa.cs" />
     <Compile Include="Services\ServiceUser.cs" />
     <Compile Include="Views\Home\Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
