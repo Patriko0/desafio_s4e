@@ -195,6 +195,7 @@
     <Content Include="Site.Master" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Views\Tarefa\Index.aspx" />
+    <Content Include="Views\User\Create.aspx" />
     <Content Include="Views\User\Index.aspx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -263,6 +264,13 @@
     </Compile>
     <Compile Include="Views\Tarefa\Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\User\Create.aspx.cs">
+      <DependentUpon>Create.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\User\Create.aspx.designer.cs">
+      <DependentUpon>Create.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\User\Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>

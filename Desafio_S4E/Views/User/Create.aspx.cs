@@ -7,16 +7,16 @@ using System.Web.UI.WebControls;
 
 namespace Desafio_S4E.Views.User
 {
-    public partial class Index : System.Web.UI.Page
+    public partial class Create : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
 
-        protected void BTN_Create_Click(object sender, EventArgs e)
+        protected void BTN_Save_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("User/create");
         }
     }
 }
