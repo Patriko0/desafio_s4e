@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Desafio_S4E.DAO;
+using Desafio_S4E.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -16,7 +18,10 @@ namespace Desafio_S4E.Views.User
 
         protected void BTN_Save_Click(object sender, EventArgs e)
         {
-            Response.Redirect("User/create");
+            UserModel user = new UserModel(){Name = TXT_Nome.Text};
+            UserDAO userDAO = new UserDAO();
+            userDAO.Create(user);
+            Response.Redirect("/User");
         }
     }
 }
